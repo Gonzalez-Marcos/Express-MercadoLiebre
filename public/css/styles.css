@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    /*Te saca todo el margen para luego acomodar*/
+    box-sizing: border-box;
+    /*Te cuenta total con margen y todo*/
+}
+
+/* Las imagenes ocupan el 100% de su contenedor, siempre ubicarla dentro de un contenedor */
+img {
+    width: 100%;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*************************************HEADER*************************************/
+header {
+    /* border: 5px solid green; */
+    background: var(--amarillo);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo, barra, lupa, compra en cuotas*/
+.logo-container {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+/*Menu hamburguesa*/
+.burger-container {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.burger-menu {
+    display: flex;
+    color: var(--blanco);
+    border: 1px solid var(--negro);
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--azul);
+}
+
+/* Menu navegacion */
+.menu-container {
+    /* border: 3px solid red; */
+    display: none;
+    justify-content: space-between;
+    padding: 0 10px;
+    /*Ponerle NONE*/
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+
+li {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.logo-bar-container {
+    /* border: 3px solid grey; */
+    display: flex;
+}
+
+/* Logo de mano y cuotas */
+.card-container {
+    /* border: 3px solid grey; */
+    padding: 15px;
+    font-size: 12px;
+
+}
+
+/*Tiutlo en H3 */
+.card-title {
+    font-weight: 100;
+    text-align: center;
+}
+
+/*Separo la manito dolar*/
+.card-title i {
+    margin-right: 5px;
+}
+
+/* Logo de mercado libre */
+.logo {
+    /* border: 3px solid pink; */
+    width: 50%;
+    padding: 10px;
+}
+
+/* Container de lupa y buscador */
+.search-button-container {
+    /* border: 3px solid pink; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* barra de busqueda y lupa */
+.search-container {
+    /* border: 3px solid brown; */
+    display: flex;
+    width: 100%;
+}
+
+/*Lupa*/
+input {
+    width: 95%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+}
+
+button {
+    width: 15%;
+    padding: 1px;
+    border: none;
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+body header .dolar-center {
+    text-align: center
+}
+
+main {
+    background: var(--grisClaro);
+    display: flex;
+    flex-direction: column;
+}
+
+/*************************************FIN DEL HEADER*************************************/
+
+/*************************************MAIN*************************************/
+body {
+    background-color: var(--grisClaro);
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 6%;
+    margin-top: 2%;
+    color: var(--grisOscuro);
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body main .last-visit, .ofert {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+main section article .price {
+    font-size: 18px;
+    width: 40%;
+}
+
+main section article .discounts {
+    font-size: 16px;
+    font-weight: normal;
+    color: #39b54a;
+    width: 60%;
+}
+
+main section article .description {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: normal;
+    display: none;
+    transition: all 1000ms ease;
+}
+
+article:hover .description {
+    height: 30px;
+    display: block;
+}
+
+main section article {
+    background: #FFF;
+    margin: 10px 0;
+    transition: all 450ms ease;
+}
+
+main section article:hover {
+    box-shadow: 0 0 10px rgb(100, 100, 100);
+    height: 460px;
+}
+
+main section .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+article .box-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a
+}   
+
+main section article:hover i {
+    transform: rotate(-90deg);
+}
+/*************************************FIN DEL MAIN*************************************/
+/*************************************COMIENZO DEL FOOTER*************************************/
+footer {
+    text-align: center;
+    background: #FFF;
+    background-position: center;
+    border: 12px solid white;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 5px 5px 5px 5px;
+}
+
+footer section .card,
+.security,
+.gift {
+    color: #1259c3;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+}
+
+.box-footer i {
+    transition: color 500ms;
+}
+.box-footer i:hover {
+    color: var(--amarillo);
+    
+} 
+
+.copy {
+    text-align: left;
+    font-size: 1rem;
+}
+/*************************************FIN DEL FOOTER*************************************/
+
+@media (min-width: 768px) {
+    /* HEADER */
+    .logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo-bar-container {
+        width: 100%;
+    }
+
+    .card-container {
+        width: 50%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        font-size: 0.6rem;
+    }
+
+    .burger-container {
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+        font-size: 0.8rem;
+    }
+
+    ul {
+        /* border: 3px solid orange; */
+        display: flex;
+        margin: 0 10px;
+        width: 42%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+/* MAIN */
+
+    main section .box-container article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 40%;
+        margin: 10px auto;
+        height: 315px;
+        transition: all 500ms ease;
+    
+    }
+
+    main section article:hover {
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+        height: 340px;
+    }
+
+    article  {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    .copy {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 2%;
+    }
+/* MAIN  */
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+    }
+
+    main section .box-container article {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        width: 22%;
+        height: 310px;
+        transition: all 500ms ease;
+    }
+    main section .box-container article:hover {
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+        height: 340px;
+    }
+/* FOOTER */
+
+
+    footer .box-footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .cash, .box-gift, .box-security {
+        display: flex;
+        flex-direction: column;
+    }
+    .copy {
+        text-align: left;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    main section .box-container article {
+        height: 430px;
+        transition: all 500ms ease;
+    }
+    main section .box-container article:hover {
+        height: 460px;
+    }
+
+}
+
+
+
+/* styles hechos*/
+
+/* p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article .price {
+    font-size: 18px;
+    width: 30%;
+}
+
+main section article .discounts {
+    font-size: 16px;
+    font-weight: normal;
+    color: #39b54a;
+    width: 70%;
+}
+
+main section article .descriptions {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: normal;
+    display: none;
+}
+
+body header .dolar-center {
+    text-align: center
+}
+
+main section article {
+    background: #FFF;
+    margin: 10px 0px;
+
+}
+
+article .box-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a
+}
+
+footer {
+    text-align: center;
+    background: #FFF;
+    background-position: center;
+    border: 12px solid white;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 5px 5px 5px 5px;
+}
+
+footer section .card,
+.security,
+.gift {
+    color: #1259c3;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 10px;
+}

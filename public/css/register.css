@@ -1,0 +1,156 @@
+h4 {
+    color: var(--grisOscuro);
+}
+
+main input {
+    width: 20%;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: flex-start;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+main .interest {
+    display: flex;
+    flex-direction: column;
+}
+
+main .interest .interest-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+main form .date1 {
+    display: flex;
+    flex-direction: column;
+}
+
+main form .date1 input {
+    width: 92%;
+    border: 12px solid white;
+    border-radius: 10px;
+    padding: 0px 50px;
+}
+
+main form .date2 input {
+    width: 92%;
+    border: 12px solid white;
+    border-radius: 10px;
+    padding: 0px 50px;
+}
+
+main form .avatar input {
+    width: 92%;
+}
+
+main form .password input {
+    width: 92%;
+    border: 12px solid white;
+    border-radius: 10px;
+    padding: 0px 50px;
+}
+
+main form .buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn,
+.btn-secondary {
+    width: 40%;
+    border-radius: 5px;
+    border: 0 solid;
+    padding: 10px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    transition: all 1000ms;
+}
+
+.btn:hover {
+    background-color: var(--celeste);
+    color: white;
+    
+}
+
+.btn-secondary:hover {
+    background-color: var(--celeste);
+    color: white;
+}
+
+@media (min-width: 768px) {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: baseline;
+        width: 50%;
+        margin: 50px auto;
+    }
+    main form input {
+        width: 40%;
+    }
+    main .interest {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    main form .avatar input {
+        width: 100%;
+    }
+    main form .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .copy {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    main form .date1 input {
+        width: 150%;
+    }
+    main form .date2 input{
+        width: 150%;
+    }
+    .profile{
+        width: 90%;
+    }
+    main form .password input{
+        width: 100%;
+    }
+    .copy {
+        text-align: left;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1440px){
+    .profile {
+        width: 60%;
+    }
+    main form .password input {
+        width: 75%;
+    }
+    main form .buttons {
+        width: 50%;
+        margin-left: 15px;
+    }
+}

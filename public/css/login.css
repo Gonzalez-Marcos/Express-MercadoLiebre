@@ -1,0 +1,70 @@
+main {
+    width: 90%;
+    height: 30%;
+}
+
+form {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user {
+    width: 100%;
+    margin: 15px 50px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.submit {
+    width: 100%;
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px auto;
+    transition: all 450ms;
+}
+
+.submit:hover {
+    background-color: var(--celeste)
+}
+
+footer {
+    width: 98%;
+    margin-top: 140px;
+}
+
+
+
+@media (min-width: 768px) {
+    footer {
+        width: 98%;
+        margin-top: 190px;
+    }
+    .copy {
+    text-align: center;
+    font-size: 0.8rem;
+}
+}
+
+@media (min-width: 1024px) {
+    form {
+        width: 70%;
+        margin: 40px auto;
+    }
+
+    footer {
+        width: 99%;
+        margin-top: 41%;
+    }
+    .copy {
+        text-align: left;
+        font-size: 0.8rem;
+    }
+}
