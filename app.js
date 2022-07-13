@@ -23,6 +23,8 @@ app.get("/login", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/login.html"))
 });
 
-app.listen(3030, () => {
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
     console.log("Servidor iniciado en http://localhost:3030")
 });
