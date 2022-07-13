@@ -89,6 +89,7 @@ li {
 .card-title {
     font-weight: 100;
     text-align: center;
+    font-weight: 500;
 }
 
 /*Separo la manito dolar*/
@@ -121,10 +122,10 @@ li {
 
 /*Lupa*/
 input {
-    width: 95%;
+    width: 82%;
     border: none;
     border-radius: 5px 0px 0px 5px;
-    padding: 10px;
+    padding: 5px;
 }
 
 button {
@@ -208,7 +209,7 @@ main section article {
 
 main section article:hover {
     box-shadow: 0 0 10px rgb(100, 100, 100);
-    height: 460px;
+    height: 445px;
 }
 
 main section .box-container {
@@ -290,7 +291,7 @@ footer section .card,
     }
 
     .logo-bar-container {
-        width: 100%;
+        width: 70%;
     }
 
     .card-container {
@@ -298,7 +299,7 @@ footer section .card,
         padding: 0;
         display: flex;
         justify-content: center;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .burger-container {
@@ -360,6 +361,9 @@ footer section .card,
     .card-container {
         font-size: 1rem;
     }
+    .nav-left, .nav-right {
+        width: 35%;
+    }
 
 /* MAIN  */
 
@@ -407,6 +411,10 @@ footer section .card,
 
 @media (min-width: 1440px) {
 
+    .nav-left, .nav-right {
+        width: 30%;
+    }
+
     main section .box-container article {
         height: 430px;
         transition: all 500ms ease;
@@ -414,6 +422,9 @@ footer section .card,
     main section .box-container article:hover {
         height: 460px;
     }
+
+    .menu-container {
+        font-size: 1.1rem;
 
 }
 
@@ -505,5 +516,4 @@ footer section .card,
     color: #1259c3;
     height: 30px;
     font-size: 2em;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px; */
