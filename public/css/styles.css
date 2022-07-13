@@ -64,6 +64,7 @@ ul {
     width: 35%;
     justify-content: space-between;
     padding: 0;
+    text-decoration: none;
     
 }
 
@@ -425,6 +426,7 @@ footer section .card,
 
     .menu-container {
         font-size: 1.1rem;
+    }
 
 }
 
@@ -432,7 +434,7 @@ footer section .card,
 
 /* styles hechos*/
 
-/* p {
+/*/* p {
     font-size: 12px;
 }
 
@@ -516,4 +518,4 @@ footer section .card,
     color: #1259c3;
     height: 30px;
     font-size: 2em;
-    margin-bottom: 10px; */
+    margin-bottom: 10px;*/
