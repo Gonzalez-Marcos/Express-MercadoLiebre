@@ -116,6 +116,7 @@ li {
 
 /* barra de busqueda y lupa */
 .search-container {
+    display: flex;
     width: 100%;
 }
 .search-container .form-container {
@@ -132,12 +133,22 @@ input {
     padding: 5px;
 }
 
+input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    background: rgba(252, 251, 251, 0.9);
+}
+
 button {
     width: 15%;
     padding: 1px;
     border: none;
     background-color: white;
     border-radius: 0px 5px 5px 0px;
+}
+
+button:hover {
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    background: rgba(252, 251, 251, 0.9);
 }
 
 body header .dolar-center {
