@@ -122,7 +122,7 @@ li {
 .search-container .form-container {
     /* border: 3px solid brown; */
     display: flex;
-    /* width: 100%; */
+    width: 100%;
 }
 
 /*Lupa*/
@@ -130,7 +130,7 @@ input {
     width: 82%;
     border: none;
     border-radius: 5px 0px 0px 5px;
-    padding: 5px;
+    padding: 6px;
 }
 
 input:hover {
@@ -379,6 +379,11 @@ footer section .card,
     .nav-left, .nav-right {
         width: 35%;
     }
+    .search-container .form-container {
+        display: flex;
+        width: 90%;
+        padding: 10px;
+    }
 
 /* MAIN  */
 
@@ -428,6 +433,13 @@ footer section .card,
 
     .nav-left, .nav-right {
         width: 30%;
+    }
+
+    .search-container .form-container {
+        display: flex;
+        width: 90%;
+        padding: 8px;
+        height: 56px;
     }
 
     main section .box-container article {
